@@ -51,6 +51,8 @@ Step 5. Calculation RISC-V instruction
 
 ![WhatsApp Image 2024-06-26 at 13 12 19_947c88bc](https://github.com/amrutha21344/amrutha21344/assets/150883697/5a90ef85-27fe-4e41-8c79-33e23a040414)
 
+***CONCLUSION***
+
 
 
 
