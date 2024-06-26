@@ -27,14 +27,28 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 
 *Installing the required programmes for this internship, such as Ubuntu on VMBox, Visual C++, and writing an example of C code along with evaluating RISC assembly code for the sample C code, are the tasks at hand.*
 
-Step 1. Setting up Ubuntu within VMBox
+Step 1. Virtual box Installed
 
-Step 2. Order for Leafpad Installation
+![Virtual Box](https://github.com/amrutha21344/amrutha21344/assets/150883697/6e1471c9-9cb4-4dfc-8a1f-3fbdbe3ebe41)
 
-Step 3. To open Leafpad
 
-Step 4. Order for Gathering Output and Examining the Results
+Step 2. Ubuntu Installed
 
-Step 5. RISC-V Compiler Code Compilation
+![UBUNTU](https://github.com/amrutha21344/amrutha21344/assets/150883697/139d657d-70e9-4021-8f56-37d44c586a1e)
 
-Step 6. Press to Display  and Order to Examine the Assembly Code
+
+Step 3. C code to execute The Sum of Numbers 1 to N
+
+![C PROGRAM OF SUM OF NUMBERS](https://github.com/amrutha21344/amrutha21344/assets/150883697/b4c50b05-8cc2-44f7-b706-b3f78192046f)
+
+
+Step 4. RISC-V Compiler Code Compilation
+
+![RISC-V INSTRUCTION SET](https://github.com/amrutha21344/amrutha21344/assets/150883697/f52a6d4d-677a-41f2-b17d-46c13ff0dd15)
+
+
+Step 5. Calculation RISC-V instruction
+
+![RISC-V INSTRUCTION SET](https://github.com/amrutha21344/amrutha21344/assets/150883697/3295ee6e-bb69-4a2c-876b-752d14109ab3)
+
+
