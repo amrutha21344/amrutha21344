@@ -12,7 +12,7 @@ TASK 2
 
 The VSDQuadron Mini Internship offers a hands-on experience focused on developing and working with a state-of-the-art development board. This internship is designed for aspiring engineers and developers who are keen to delve into the world of embedded systems and hardware design. Participants will gain practical knowledge and experience in programming, interfacing, and utilizing various features of the VSDQuadron development board.
 
-# Development Board Features:
+# Board Features:
 
 **32-bit RISC-V Core:**
 
@@ -27,3 +27,14 @@ The VSDQuadron Mini Internship offers a hands-on experience focused on developin
 
 *Installing the required programmes for this internship, such as Ubuntu on VMBox, Visual C++, and writing an example of C code along with evaluating RISC assembly code for the sample C code, are the tasks at hand.*
 
+Step 1. Setting up Ubuntu within VMBox
+
+Step 2. Order for Leafpad Installation
+
+Step 3. To open Leafpad
+
+Step 4. Order for Gathering Output and Examining the Results
+
+Step 5. RISC-V Compiler Code Compilation
+
+Step 6. Press to Display  and Order to Examine the Assembly Code
