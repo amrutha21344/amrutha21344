@@ -49,6 +49,5 @@ Step 4. RISC-V Compiler Code Compilation
 
 Step 5. Calculation RISC-V instruction
 
-![RISC-V INSTRUCTION SET](https://github.com/amrutha21344/amrutha21344/assets/150883697/3295ee6e-bb69-4a2c-876b-752d14109ab3)
 
 
