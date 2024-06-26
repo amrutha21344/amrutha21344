@@ -92,11 +92,11 @@ Developing an automated parking ticket vending machine in C involves managing ha
 
 ![Screenshot (214)](https://github.com/amrutha21344/amrutha21344/assets/150883697/c7c399e3-342e-42a2-9156-2a03094572f6)
 
-# Converting the C program to RISC-V instruction set
-
 ![Screenshot (215)](https://github.com/amrutha21344/amrutha21344/assets/150883697/16dc5209-c059-4a1f-b174-96d3c0580055)
 
 ![Screenshot (216)](https://github.com/amrutha21344/amrutha21344/assets/150883697/ff434bac-a7e5-4bad-a48a-38d65119eb5c)
+
+ # Converting the C program to RISC-V instruction set
 
 ![Screenshot (218)](https://github.com/amrutha21344/amrutha21344/assets/150883697/34cf6ba4-2287-4c58-b262-00ae38831641)
 
