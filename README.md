@@ -8,6 +8,7 @@ TASK 2
 
 TASK 3
 
+TASK 4
 
 
 # Description: 
@@ -156,6 +157,196 @@ Objdump is a utility that can display information about ELF files, including the
 3. Analyze performance implications: Understand how different optimization levels affect the size and efficiency of the generated code. -Ofast typically enables more aggressive optimizations compared to -O1, which can result in faster but potentially larger code.
 
 ![Screenshot 2024-06-28 124311](https://github.com/amrutha21344/amrutha21344/assets/150883697/b2b7efd5-bb72-48b3-8971-c3df2314606d)
+
+***CONCLUSION***
+
+# TASK 
+
+# 
+
+# Identify various RISC-V instruction type (R, I, S, B, U, J) and exact 32-bit instruction code in the instruction type format for below RISC-V instructions
+
+let's break down the RISC-V instruction types (R, I, S, B, U, J) and provide the 32-bit instruction codes for each type:
+
+# **R-Type (Register Type):**
+
+
+Used for arithmetic and logic operations between registers.
+
+Format: opcode rd rs1 rs2 funct3 rs2 funct7
+
+Example instruction: add rd, rs1, rs2
+
+Instruction Code Example:
+
+add rd, rs1, rs2: 0000000 rs2 rs1 000 000 rd 0110011
+
+
+# **I-Type (Immediate Type):**
+
+Used for arithmetic and logical operations with an immediate value.
+
+Format: opcode rd funct3 rs1 imm[11:0]
+
+Example instruction: addi rd, rs1, immediate
+
+Instruction Code Example:
+
+addi rd, rs1, immediate: imm[11:0] rs1 000 rd 0010011
+
+
+# **S-Type (Store Type):**
+
+Used for storing a value from a register to memory.
+
+Format: opcode imm[11:5] rs2 rs1 funct3 imm[4:0]
+
+Example instruction: sw rs2, offset(rs1)
+
+Instruction Code Example:
+
+sw rs2, offset(rs1): imm[11:5] rs2 rs1 010 imm[4:0] 0100011
+
+
+# **B-Type (Branch Type):**
+
+Used for conditional branches based on comparison results.
+
+Format: opcode imm[12|10:5] rs2 rs1 funct3 imm[4:1|11]
+
+Example instruction: beq rs1, rs2, offset
+
+Instruction Code Example:
+
+beq rs1, rs2, offset: imm[12] imm[10:5] rs2 rs1 000 imm[4:1] imm[11] 1100011
+
+
+# **U-Type (Upper Immediate Type):**
+
+Used for setting the upper bits of a register with an immediate value.
+
+Format: opcode rd imm[31:12]
+
+Example instruction: lui rd, immediate
+
+Instruction Code Example:
+
+lui rd, immediate: imm[31:12] rd 0110111
+
+
+# **J-Type (Jump Type):**
+
+Used for unconditional jumps and procedure calls.
+
+Format: opcode rd imm[20|10:1|11|19:12]
+
+Example instruction: jal rd, offset
+
+Instruction Code Example:
+
+jal rd, offset: imm[20] imm[10:1] imm[11] imm[19:12] rd 1101111
+
+These formats and examples cover the basic RISC-V instruction types and their corresponding 32-bit instruction codes. Each instruction type serves different purposes within the RISC-V instruction set architecture, allowing for efficient and versatile programming and execution.
+
+
+ADD r1, r2, r3 *SUB r3, r1, r2 *AND r2, r1, r3 *OR r8, r2, r5 *XOR r8, r1, r4 *SLT r10, r2, r4 *ADDI r12, r3, 5 *SW r3, r1, 4 *SRL r16, r11, r2 *BNE r0, r1, 20 *BEQ r0, r0, 15 *LW r13, r11, 2 *SLL r15, r11, r2 Upload the 32-bit pattern***
+
+**Here are the 32-bit instruction codes for each of the given RISC-V instructions:**
+
+ **ADD r1, r2, r3:**  
+ 
+
+     add r1, r2, r3: 0000000 00011 00010 000 00011 0110011
+
+     Instruction Code: 0000000 00010 00001 000 00011 0110011 (hex: 0x00210033)
+
+ **SUB r3, r1, r2:**
+ 
+
+     sub r3, r1, r2: 0100000 00011 00001 000 00010 0110011
+
+     Instruction Code: 0100000 00001 00011 000 00010 0110011 (hex: 0x00118033)
+
+**AND r2, r1, r3:**
+
+
+    and r2, r1, r3: 0000000 00010 00001 111 00011 0110011
+
+    Instruction Code: 0000000 00011 00010 111 00001 0110011 (hex: 0x00311033)
+
+ **OR r8, r2, r5:**
+ 
+
+    or r8, r2, r5: 0000000 01000 00010 110 00101 0110011
+
+    Instruction Code: 0000000 00101 01000 110 00010 0110011 (hex: 0x28502133)
+
+ **XOR r8, r1, r4:**
+
+
+    xor r8, r1, r4: 0000000 01000 00001 100 00100 0110011
+
+    Instruction Code: 0000000 00100 01000 100 00001 0110011 (hex: 0x24408133)
+
+ **SLT r10, r2, r4:**
+ 
+
+    slt r10, r2, r4: 0000000 01010 00010 010 00100 0110011
+
+    Instruction Code: 0000000 00100 01010 010 00010 0110011 (hex: 0x2520A133)
+
+ **ADDI r12, r3, 5:**
+
+
+    addi r12, r3, 5: 0000010 01100 00011 000 00001 0010011
+
+    Instruction Code: 0000010 00001 01100 000 00011 0010011 (hex: 0x00130013)
+
+
+ **SW r3, r1, 4:**
+
+
+    sw r3, 4(r1): 0000010 00011 00001 010 00000 0100011
+
+    Instruction Code: 0000010 01000 00011 010 00001 0100011 (hex: 0x08418303)
+
+ **SRL r16, r11, r2:**
+
+
+    srl r16, r11, r2: 0000000 10000 01011 101 00010 0110011
+
+    Instruction Code: 0000000 00010 10000 101 01011 0110011 (hex: 0x1250A033)
+
+ **BNE r0, r1, 20:**
+
+
+    bne r0, r1, 20: 0001011 00000 00001 001 10100 1100011
+
+    Instruction Code: 0001011 10100 00000 001 00001 1100011 (hex: 0xB0406E63)
+
+ **BEQ r0, r0, 15:**
+
+
+    beq r0, r0, 15: 0001000 00000 00000 000 01111 1100011
+
+    Instruction Code: 0001000 01111 00000 000 00000 1100011 (hex: 0x0800F063)
+
+ **LW r13, r11, 2:**
+
+
+    lw r13, 2(r11): 0000011 01101 01011 010 00010 0000011
+
+    Instruction Code: 0000011 00010 01101 010 01011 0000011 (hex: 0x1A56A303)
+
+ **SLL r15, r11, r2:**
+
+
+    sll r15, r11, r2: 0000000 01111 01011 001 00010 0110011
+
+    Instruction Code: 0000000 00010 01111 001 01011 0110011 (hex: 0x02B1A033)
+
+These codes represent the 32-bit binary encodings (in hexadecimal) for each of the specified RISC-V instructions, following the respective instruction formats for R, I, S, B, U, and J types.
+
 
 
 
